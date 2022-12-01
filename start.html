@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#">
+      <fieldset id="user-info">
+        <!-- Email -->
+        <legend>Registration</legend>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+        <!-- Fullname -->
+        <label for="fullname">Name and Lastname:</label>
+        <input type="text" name="fullname" id="fullname" />
+        <!-- Date of Birth -->
+        <label for="dob">Date of birth:</label>
+        <input type="date" name="dob" id="dob" />
+        <!-- Telephone number -->
+        <label for="tel">Telephone number:</label>
+        <input type="tel" name="tel" id="tel" />
+      </fieldset>
+      <fieldset id="plan">
+        <legend>Choose Plan</legend>
+        <!-- Select Plan -->
+        <select id="plan" name="plan">
+          <option value="0">Free</option>
+          <optgroup label="Paid Plans">
+            <option value="999">9.99€/month</option>
+            <option value="1999">19.99€/month</option>
+            <option value="2999">29.99€/month</option>
+          </optgroup>
+        </select>
+        <label>
+          <input type="checkbox" name="plan" id="plan_pro" />
+          Pro Plan
+        </label>
+      </fieldset>
+      <fieldset id="payment-method">
+        <legend>Payment Method</legend>
+        <!-- Credit card number -->
+        <label for="credit-card">Credit card number:</label>
+        <input type="text" name="credit-card" id="credit-card" maxlength="16" />
+        <!-- CVC -->
+        <label for="cvc">CVC:</label>
+        <input type="text" name="cvc" id="cvc" maxlength="3" />
+        <!-- Expiration date -->
+        <label for="expiration">Expiration date:</label>
+        <input type="date" name="expiration" id="expiration" />
+      </fieldset>
+      <fieldset id="billing-address">
+        <legend>Billing Address</legend>
+        <!-- Billing Address -->
+        <label for="address">Street and number:</label>
+        <input type="text" name="address" id="address" />
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" />
+        <label for="province">Province:</label>
+        <input type="text" name="province" id="province" />
+        <label for="postcode">Post code:</label>
+        <input type="text" name="postcode" id="postcode" />
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="country" />
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
